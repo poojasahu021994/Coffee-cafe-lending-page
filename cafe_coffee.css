@@ -37,34 +37,46 @@ figure{
     0%{
         left:0px;
     }
+    5%{
+        left:-0px;
+    }
     10%{
-        left:0px;
+        left:-100%;
+    }
+    15%{
+        left:-100%;
     }
     20%{
-        left:-100%;
+        left:-200%;
+    }
+    25%{
+        left:-200%;
     }
     30%{
-        left:-100%;
+        left:-300%;
+    }
+    35%{
+        left:-300%;
     }
     40%{
-        left:-200%;
+        left:-400%;
     }
-    50%{
-        left:-200%;
+    48%{
+        left:-400%;
     }
-    55%{
+    56%{
         left:-300%;
     }
     65%{
         left:-300%;
     }
-    66%{
-        left:-200%;
-    }
-    74%{
+    70%{
         left:-200%;
     }
     75%{
+        left:-200%;
+    }
+    80%{
         left:-100%;
     }
     85%{
@@ -94,7 +106,7 @@ figure{
 /* ==========navbar=============== */
 
 #Navbar{
-    position:relative;
+    position:sticky;
     width: 100%;
     z-index: 2000;
     padding: 10px 40px 0;
@@ -135,11 +147,11 @@ figure{
     list-style: none;
     text-decoration: none;
     font-family: gotham-book;
-    transition: all 2s ease;
+    transition: all .5s ease;
 }
 .navmenu a:hover{
     text-decoration: underline;
-    transition: all 2s ease;
+    transition: all 1s ease;
 }
 #images-animasan{
     display: flex;
@@ -165,8 +177,22 @@ figure{
     width: 150px;
     border-radius: 40px;
     border: none;
+    cursor: pointer;
 }
+#btn1:hover{
+    background-color: rgb(255, 208, 0);
 
+}
+#btn2:hover{
+    background-color: rgb(22, 20, 11);
+    
+
+}
+#btn3:hover{
+    background-color: rgb(22, 20, 11);
+    
+
+}
 #btn2{
     position: absolute;
     align-content: center;
@@ -181,13 +207,14 @@ figure{
     width: 200px;
     border-radius: 40px;
     border: none;
+    cursor: pointer;
 }
 #btn3{
     position: absolute;
     align-content: center;
     text-align: center;
     align-items: center;
-    margin: 370px 0px 0 200px;
+    margin: 300px 0px 0 150px;
     background-color:rgb(230, 90, 90);
     color: white;
     font-size: 15px;
@@ -196,6 +223,7 @@ figure{
     width: 200px;
     border-radius: 40px;
     border: none;
+    cursor: pointer;
 }
 #history-img{
     position: relative;
@@ -208,7 +236,7 @@ figure{
 }
 #history-img img{
     height: auto;
-    width: 600px;
+    width: 500px;
     align-items: center;
     text-align: center;
     align-content: center;
@@ -253,9 +281,60 @@ footer{
  }
  .social_icon ul li a{
     margin: 10px;
-    color:rgb(230, 90, 90) ;
+    font-size: 20px;
+    /* color:rgb(230, 90, 90) ; */
  }
- 
- 
+ #facebook a {
+    color: rgb(63, 63, 235);
+ }
+ #twitter a{
+    color: rgb(103, 103, 243);
+ }
+ #linkdin a{
+    color: rgb(67, 130, 167);
+ }
+ #instagram a{
+    color: rgb(238, 12, 12);
+ }
+ #youtube a{
+    color: rgba(252, 7, 7, 0.979);
+ }
+ @media screen and (max-width : 375px) {
+    #Navbar{
+        display: none;
+    }
+    .slide img{
+        width: 100%;
+        height: 300px;
+    }
+
+    #images-animasan{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        z-index: 2000;
+    }
+    #history-img{
+        height: 100vh;
+        width: 100vw;
+       
+    }
+    #history-img img{
+        width: 300px;
+    }
+    #btn3{
+        margin: 180px 0px 0 80px;
+        height: 30px;
+        width: 150px;
+        font-size: 11px;
+    }
+    .main_div{
+        display: none;
+    }
+    .social_icon ul li a{
+        margin: 10px;
+        font-size: 17px;
+     }
+ }
  
  /* ============================Footer Section end======================== */
