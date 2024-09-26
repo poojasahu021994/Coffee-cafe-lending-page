@@ -4,7 +4,9 @@
 }
 body{
     overflow-x: hidden;
-    background-image: url(backgound-img);
+}
+html{
+    overflow-x: hidden;
 }
 .slider{
     width: 100%;
@@ -83,7 +85,7 @@ figure{
     display: flex;
 }
 .m-btn{
-    border: 2px solid rgb(201, 9, 9);
+    border: 2px solid #dc4348;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -101,14 +103,11 @@ figure{
     justify-content: space-between;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
 }
-/* #Navbar .logo{
-    margin-right: 100px;
-} */
 
 .logo img{
     max-width: 200px;
     height: 80px;
-     margin-left: 70px;
+    margin-left: 40px;
 }
 .navmenu{
     display: flex;
@@ -122,7 +121,7 @@ figure{
     margin-left: 15px;
     align-items: center;
     font-size: 20px;
-    color: rgb(231, 77, 77);
+    color: #dc4348;
 
 
 }
@@ -132,15 +131,15 @@ figure{
     padding: 10px 20px;
     font-weight: 400;
     transition: all .42s ease;
-    color:rgb(230, 90, 90);
+    color:#dc4348;
     list-style: none;
     text-decoration: none;
     font-family: gotham-book;
+    transition: all 2s ease;
 }
 .navmenu a:hover{
-    list-style: outside;
-    text-decoration: solid;
-    transition: all 1s ease;
+    text-decoration: underline;
+    transition: all 2s ease;
 }
 #images-animasan{
     display: flex;
@@ -157,8 +156,8 @@ figure{
     align-content: center;
     text-align: center;
     align-items: center;
-    margin: 370px 0px 0 150px;
-    background-color:rgb(230, 90, 90);
+    margin: 370px 0px 0 120px;
+    background-color:#dc4348;
     color: white;
     font-size: 15px;
     font-weight: 600;
@@ -167,12 +166,13 @@ figure{
     border-radius: 40px;
     border: none;
 }
+
 #btn2{
     position: absolute;
     align-content: center;
     text-align: center;
     align-items: center;
-    margin: 370px 0px 0 150px;
+    margin: 370px 0px 0 120px;
     background-color:rgb(230, 90, 90);
     color: white;
     font-size: 15px;
@@ -182,3 +182,80 @@ figure{
     border-radius: 40px;
     border: none;
 }
+#btn3{
+    position: absolute;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 370px 0px 0 200px;
+    background-color:rgb(230, 90, 90);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    height: 40px;
+    width: 200px;
+    border-radius: 40px;
+    border: none;
+}
+#history-img{
+    position: relative;
+    background-image: url(./Images/backgound-img.jpg);
+    height: 100vh;
+    width: auto;
+    text-align: center;
+    align-content: center;
+
+}
+#history-img img{
+    height: auto;
+    width: 600px;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    z-index: 2000;
+}
+footer{
+    background-color: white;
+    padding-bottom: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+    
+ 
+ }
+ .main_div{
+     display: grid;
+     grid-template-columns: auto auto auto auto auto;
+     gap: 2rem;
+     justify-content: space-evenly;
+     color: rgb(82, 80, 80);
+     
+ }
+ 
+ .main_div ul li a{
+     color: rgb(82, 80, 80);
+     margin-top: 5px;
+     list-style: none;
+     text-decoration: none;
+ }
+ .main_div ul li{
+     margin-top: 10px;
+     list-style: none;
+     text-decoration: none;
+ }
+     
+ .social_icon ul{
+     display: flex;
+     justify-content: center;
+     list-style: none;
+     text-decoration: none;
+     margin: 20px 0 20px 0;
+
+    
+ }
+ .social_icon ul li a{
+    margin: 10px;
+    color:rgb(230, 90, 90) ;
+ }
+ 
+ 
+ 
+ /* ============================Footer Section end======================== */
