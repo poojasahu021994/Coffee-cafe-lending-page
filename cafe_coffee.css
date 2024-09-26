@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.slider{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    
+}
+figure{
+    position: relative;
+    left: 0;
+    width: 400%;
+    animation: 20s slide infinite;
+}
+
+
+.slide{
+    position: relative;
+    width: 25%;
+    float: left;
+}
+.slide img{
+    width: 100%;
+    height: 500px;
+}
+
+
+@keyframes slide{
+    0%{
+        left:0px;
+    }
+    10%{
+        left:0px;
+    }
+    20%{
+        left:-100%;
+    }
+    30%{
+        left:-100%;
+    }
+    40%{
+        left:-200%;
+    }
+    50%{
+        left:-200%;
+    }
+    55%{
+        left:-300%;
+    }
+    65%{
+        left:-300%;
+    }
+    66%{
+        left:-200%;
+    }
+    74%{
+        left:-200%;
+    }
+    75%{
+        left:-100%;
+    }
+    85%{
+        left:-100%;
+    }
+    90%{
+        left:0%;
+    }
+    100%{
+        left:0%;
+    }
+    
+}
+.nav_manual{
+    position: absolute;
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+}
+.m-btn{
+    border: 2px solid rgb(201, 9, 9);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+/* ==========navbar=============== */
+
+#Navbar{
+    position:sticky;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    max-width: 200px;
+    height: 80px;
+}
+.navmenu{
+    display: flex;
+}
+.navmenu a{
+    color:rgb(216, 179, 14);
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.navmenu a:hover{
+    color: blue;
+}
