@@ -153,13 +153,58 @@ figure{
     text-decoration: underline;
     transition: all 1s ease;
 }
-#images-animasan{
+/* ====================== */
+#smallnav{
+    display: none;
+}
+
+#shownav{
+    width: 400px;
+    background-color: black;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: -400px;
+    z-index: 3;
+}
+#shownav article div a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+#shownav article div {
+    padding: 25.8px 0px 25.8px 15px;
+}
+#cafe-finder{
+    background-color: rgb(150, 230, 230);   
+}
+#cafe-menu{
+    background-color: rgb(233, 103, 216);
+}
+#e-shop{
+    background-color: rgb(238, 255, 6);
+}
+#social-corner{
+    background-color: rgb(250, 98, 38);
+}
+#mobile-app{
+    background-color: rgb(255, 6, 6);
+}
+#about-us{
+    background-color: rgb(248, 177, 189);
+}
+
+#cafe-menu{
+    background-color: rgb(233, 103, 216);
+}
+/* ================= */
+#images-animation{
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 2000;
 }
-#images-animasan div img{
+#images-animation div img{
     height: auto;
     width: 450px;
 }
@@ -301,18 +346,20 @@ footer{
  }
  @media screen and (max-width : 375px) {
     #Navbar{
+        /* position: absolute; */
         display: none;
     }
     .slide img{
         width: 100%;
-        height: 300px;
+        height: 250px;
     }
 
-    #images-animasan{
+    #images-animation{
         display: block;
-        align-items: center;
-        justify-content: center;
-        z-index: 2000;
+    }
+    #images-animation div img{
+        height: auto;
+        width: 400px;
     }
     #history-img{
         height: 100vh;
@@ -328,6 +375,12 @@ footer{
         width: 150px;
         font-size: 11px;
     }
+    #btn1{
+        margin: 330px 0px 0 120px;
+    }
+    #btn2{
+        margin: 330px 0px 0 90px;
+    }
     .main_div{
         display: none;
     }
@@ -335,6 +388,25 @@ footer{
         margin: 10px;
         font-size: 17px;
      }
+
+     /* ============navbar======= */
+     #smallnav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 5px 5px 5px;
+    }
+
+    #smallnav article div i{
+        font-size: 29px;
+        color: #dc4348;
+        
+    }
+
+    #input1:checked ~ #shownav{
+        left: 0px;
+        transition: left 1s;
+    }
  }
  
  /* ============================Footer Section end======================== */
